@@ -1,0 +1,58 @@
+ body{
+	margin:0;
+	padding:0;
+	background-color:#1cb197 !important;
+	
+	
+} 
+
+#main{
+	width:100%;
+	height: 700px;
+	background:url("../img/login.jpg") repeat scroll 0 0;
+	font-size: 15px;
+}
+
+
+.container form{
+	color:white;
+	padding-top: 20%;
+}
+.container form input{
+	background-color: transparent;
+	border-radius: 10px;
+	color:white;
+}
+.container form button{
+	border-radius: 10px;
+	background-color: rgba(66,147,213,0.2)
+}
+.container form .form-group{
+	margin-top: 1.8%;
+}
+
+
+#main .forget{
+	
+	height:27px;
+	padding-top:8px;
+
+}
+#main .forget a{
+	color:white;
+	margin-left: 70px;
+}
+footer .footerContent{
+	/*margin-top: 60px;*/
+	padding-top:10px;
+	height:80px;
+	text-align: center;
+	border-top:1px solid #ccc;
+}
+footer .footerContent a{
+	color:#666;
+}
+footer .footerContent p{
+	
+	line-height: 1em;
+}

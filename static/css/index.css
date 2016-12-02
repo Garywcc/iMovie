@@ -1,0 +1,312 @@
+ body{
+	margin:0;
+	padding:0;
+	background-color:#1cb197;
+	
+	
+} 
+a{
+	text-decoration: none;
+}
+.navbar-default{
+	 border-color:#1cb197;
+	 border-bottom-color: #666;
+	background-color:#1cb197; 
+	
+}
+
+
+#navCollapse{
+	
+	font-size: 20px;
+	border-color:#1cb197;
+	float: left;
+
+}
+.navbar-left{
+	font-size:15px;
+}
+.navbar-right a{
+	float:right;
+}
+
+
+
+
+.content{
+	margin:0px auto;
+
+	
+	height:auto;
+}
+.content .contentLeft{
+	margin-top:60px;
+}
+#myCarousel{
+	margin-top:20px;
+	width:100%;
+	
+}
+#myCarousel .carousel-caption h3{
+	font-size: 15px;
+}
+#myCarousel .carousel-caption p{
+	font-size:10px;
+}
+.list{
+	margin-top: 2em;
+	
+}
+.list .thumbnail{
+	background-color: #1cb197;
+	/*border:1px solid red;*/
+	height:500px;
+	width:300px;
+	/*height:600px;*/
+}
+.list .thumbnail h2 a{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-decoration: none;
+	color:black;
+	font-size: 22px;
+}
+.list a img{
+	
+	height:85%;
+	width:98%;
+}
+
+.list .thumbnail a:hover{
+	color:blue;
+}
+.info{
+	
+	text-align: center;
+}
+.info span{
+	 /* margin:0 2em; */
+	padding-right:0.2em; 
+	margin:0 1em;
+
+
+}
+.info a{
+	color:#666;
+	padding:0 0.8em;
+}
+
+/*自定义分页*/
+ .contentLeft .pageList{
+	text-align:center;
+}
+/* .contentLeft .pageList a{
+	background-color: white;
+	border:1px solid #dfdfdf;
+	box-shadow:0 2px 4px 0 #d9d9d9;
+	display:inline-block;
+	height:28px;
+	line-height:28px;
+	min-width:28px;
+	text-align: center;
+	letter-spacing: 3px;
+	padding:0 4px;
+	margin:0 4px;
+}  */
+
+
+.contentRight{
+	margin-top: 120px;
+	
+	
+	
+}
+.contentRight .affix{
+	width:350px;
+	height:400px;
+	
+}
+div.affix.affix{
+	top:20px;
+}
+
+.contentRight .classfiy{
+	width:350px;
+	height:400px;
+	
+}
+
+.contentRight .classfiy hr{
+	border:2px solid #ccc;
+}
+ .contentRight .classfiy .tags a{
+	
+	
+	background-color: #eee;
+	
+	margin:4px 4px;
+}
+.contentRight .fixContent{
+	width:350px;
+} 
+.contentRight .fixContent .tab-content ul{
+	padding-left: 0;
+}
+.contentRight .fixContent .tab-content li{
+	list-style: none;
+	width:100%;
+	margin:10px 0;
+
+}
+.contentRight .fixContent .tab-content li a{
+
+	color:#666;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+
+
+footer .footerContent{
+	margin-top: 60px;
+	padding-top:10px;
+	height:80px;
+	text-align: center;
+	border-top:1px solid #ccc;
+}
+footer .footerContent a{
+	color:#666;
+}
+footer .footerContent p{
+	
+	line-height: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+	.navbar-left{
+		margin-left: 100px;
+		font-size:20px;
+	
+	} 
+	.navbar-right a{
+		margin-right:-18px;
+	}
+
+	#myCarousel .carousel-caption h3{
+	font-size: 17px;
+	}
+	#myCarousel .carousel-caption p{
+		font-size:12px;
+	}
+
+	.list .thumbnail{
+		width:auto;
+		
+	}
+	.list .thumbnail h2 a{
+		font-size: 15px
+	}
+	.info span{
+		margin:0 0.5em;
+	}
+
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	.navbar-left{
+		margin-left: 100px;
+		font-size:20px;
+	
+	} 
+
+	#myCarousel .carousel-caption h3{
+	font-size: 20px;
+	}
+	#myCarousel .carousel-caption p{
+		font-size:14px;
+	}
+	.list .thumbnail{
+		width:auto;
+		/*height:600px;*/
+
+	}
+	.list .thumbnail h2 a{
+		font-size: 18px
+	}
+	.info span{
+		margin:0 3px;
+	}
+
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+	.navbar-left{
+			margin-left: 100px;
+			font-size:20px;
+		
+		} 
+	#myCarousel .carousel-caption h3{
+	font-size: 22px;
+	}
+	#myCarousel .carousel-caption p{
+		font-size:16px;
+	}
+	.list .thumbnail{
+		width:auto;
+		/*height:600px;*/
+	}
+	.list .thumbnail h2{
+		margin-top: 12px;
+	}
+	.list .thumbnail h2 a{
+		font-size: 20px
+	}
+	.info span{
+		margin:0 0.5em;
+	}
+}

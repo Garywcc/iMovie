@@ -1,0 +1,78 @@
+                        *{
+                                margin:0;    
+                                padding:0;
+                            }
+                            .main{
+                                width:99%;
+                                height:600px;
+                                /*border:1px solid black;*/
+                                margin-top: 15px;
+                            }
+                            .left{
+                               float:left;
+                                width:15%;
+                                height: 600px;
+                                /*border:1px solid red;*/
+                                background: #f2f2f2 none repeat scroll 0 0;
+                                border-right: 1px solid #ccc;
+                            }
+                            .right{
+                                float: left;
+                                width:78%;
+                                height:600px;
+                                /*border:1px solid yellow;*/
+                            }
+                            .leftTitle{
+                                /*display: inline-block;*/
+                                font-size: 24px;
+                                height:40px;
+                                line-height: 40px;
+                                text-indent: 1em;
+                                text-align: left;
+                                
+                            }
+                            .leftTitle h1{
+                                font-weight: normal;
+                                font-size:100%;
+                            }
+                            .leftList{
+                                background-color: #fff;
+                                padding:0;
+                            }
+                            .leftList li{
+                                height:40px;
+                                line-height: 40px;
+                                
+                                padding-left:35px;
+                                border-style:solid;
+                                border-width:1px 0;
+                                border-color:#e5e5e5;
+                            }
+                            .leftList a{
+                                text-decoration: none;
+                                color:black;
+                            }
+                            .rightHead{
+                                background-color:#f2f2f2;
+                                height:40px;
+                                line-height:40px;
+                                padding-left: 20px;
+                            }
+                            .rightContent {
+                                    border-collapse:collapse;
+                                    border-spacing: 0;
+                                    
+                                    margin-top: 10px;
+                                    margin-left: 10px;
+
+                            }
+                           .adminHeader{
+                            font-size: 30px;
+                            text-shadow: 2px 2px 2px gray;
+                           }
+                           .adminHeader li{
+                                display: inline
+                           }
+                           .adminHeader li a{
+                                float:right 
+                           }

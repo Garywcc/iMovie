@@ -1,0 +1,12 @@
+.contentLeft{
+	
+}
+.contentLeft hr{
+	border:3px solid #ccc;
+}
+.contentLeft p{
+	margin-bottom: 20px;
+}
+.contentLeft .describtionList p{
+	line-height: 2em;
+}

@@ -1,0 +1,42 @@
+ body{
+	margin:0;
+	padding:0;
+	background-color:#1cb197 !important;	
+} 
+#main{
+	width:100%;
+	height: 700px;
+	background:url("../img/login.jpg") repeat scroll 0 0;
+	font-size: 15px;
+	color:white;
+}
+
+.container form{
+	padding-top: 15%;
+}
+.container form input{
+	background-color: transparent;
+	color:white;
+}
+.container form button{
+	border-radius: 10px;
+	background-color: rgba(66,147,213,0.2)
+}
+
+
+
+
+footer .footerContent{
+	/*margin-top: 60px;*/
+	padding-top:10px;
+	height:80px;
+	text-align: center;
+	border-top:1px solid #ccc;
+}
+footer .footerContent a{
+	color:#666;
+}
+footer .footerContent p{
+	
+	line-height: 1em;
+}

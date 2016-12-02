@@ -1,0 +1,148 @@
+<%- include header %>
+	<!-- 主体内容 -->
+	
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 contentLeft">
+					
+					<form class="form-inline">
+						<div class="row">
+							<div class="col-md-10 col-xs-10" style="padding-right:0"><input type="text" class="form-control" style="width:100%;background-color:#1cb197;"></div>
+							<div class="col-md-2 col-xs-2" style="padding-left:0;"><button type="button" class="btn btn-default" style="background-color:#ccc;">搜索</button></div>
+						</div>
+					</form>
+					<!-- 轮播组件 -->
+					<div class="carousel slide" id="myCarousel">
+						<ol class="carousel-indicators">
+							<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<!-- <a href="#"><img src="/img/1.jpg" alt=""></a> -->
+								<a href="#"><img src=<%=carouselList[0].imgSrc %> alt=""></a>
+								<div class="carousel-caption">
+									<!-- <h3>火影忍者</h3>
+									<p>这是一个忍者的世界。从小身上封印着邪恶的九尾妖狐。。。</p> -->
+									<h3><%= carouselList[0].title %></h3>
+									<p><%= carouselList[0].content %></p>
+								</div>
+							</div>
+							<div class="item">
+								<a href="#"><img src=<%=carouselList[1].imgSrc %> alt=""></a>
+								<div class="carousel-caption">
+									<h3><%= carouselList[1].title %></h3>
+									<p><%= carouselList[1].content %></p>
+								</div>
+							</div>
+							<div class="item">
+								<a href="#"><img src=<%=carouselList[2].imgSrc %> alt=""></a>
+								<div class="carousel-caption">
+									<h3><%= carouselList[2].title %></h3>
+									<p><%= carouselList[2].content %></p>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+					</div>
+					<!-- 列表 -->
+					<div class="row list">
+						<% var len=list.length;for(var i=(pages-1)*9;i<pages*9;i++){if(list[i]){%>
+							<div class="col-md-4" style="height:60%;">
+							<div class="thumbnail ">
+								<a href=<%=list[i].aHref+list[i].num %>><img src=<%=list[i].imgSrc %>  alt="" /></a>
+								<div class="title">
+									<h2 style="text-align: center;"><a title=<%=list[i].aTitle %> target="_blank" rel="bookmark" href=<%=list[i].aHref %>><%=list[i].aContent %></a></h2>
+								</div>
+								<div class="info">
+									<span class="glyphicon glyphicon-calendar">&nbsp;<%=list[i].calendar %></span>
+									<span class="glyphicon glyphicon-eye-open">&nbsp;<%=list[i].rating %></span>
+									<span class="glyphicon glyphicon-comment"><a href=<%=list[i].commentHref %>><%=list[i].comment %></a></span>
+								</div>
+								
+							</div>
+						</div>
+
+						<% }}%>
+						
+						
+					</div>	
+					<!-- 分页 -->
+					<div class="pageList">
+						<% var len=list.length;
+						var pages=Math.ceil(len /9);
+						for(var i=0;i<pages;i++){
+						%>
+						<a href=<%= "/?pages="+(i+1)%> class="btn btn-info"><%= i+1 %></a>
+						<% }%>
+						
+					</div>
+				</div>
+
+				<div class="col-md-3 contentRight">
+					<div class="affix hidden-xs hidden-sm" data-spy="affix" data-offset-top="700" >
+ 							<div class="classfiy">
+ 								<h3>电影分类</h3>
+ 								<hr>
+ 								<div class="tags">
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">动作片</a>
+ 									<a href="#" class="btn btn-default">动画片</a>
+ 									<a href="#" class="btn btn-default">剧情片</a>
+ 									<a href="#" class="btn btn-default">古装片</a>
+ 									<a href="#" class="btn btn-default">综艺</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">综艺</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 									<a href="#" class="btn btn-default">动作片</a>
+ 									<a href="#" class="btn btn-default">动画片</a>
+ 									<a href="#" class="btn btn-default">剧情片</a>
+ 									<a href="#" class="btn btn-default">古装片</a>
+ 									<a href="#" class="btn btn-default">综艺</a>
+ 									<a href="#" class="btn btn-default">科幻</a>
+ 								</div>
+ 							</div>
+					</div>
+					<div class="fixContent hidden-xs">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#newest" data-toggle="tab">最新电影</a></li>
+							<li ><a href="#recommendation" data-toggle="tab">推荐电影</a></li>
+						</ul>
+						<div class="tab-content">
+							<ul class="tab-pane fade in active" id="newest">
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2015年 复仇者联盟2：奥创纪元/复仇者联盟2/复仇者联盟：奥创时代/复仇者联盟：奥创年代/复联2 高清电影 [美国/动作/科幻/奇幻/冒险]</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2015年 复仇者联盟2：奥创纪元/复仇者联盟2/复仇者联盟：奥创时代/复仇者联盟：奥创年代/复联2 高清电影 [美国/动作/科幻/奇幻/冒险]</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2015年 复仇者联盟2：奥创纪元/复仇者联盟2/复仇者联盟：奥创时代/复仇者联盟：奥创年代/复联2 高清电影 [美国/动作/科幻/奇幻/冒险]</a></li>
+
+							</ul>
+							<ul class="tab-pane fade" id="recommendation">
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2016年 冰与火之歌：权力的游戏 第六季 高清电视剧 [美国/英国/剧情/战争/奇幻/冒险][持续更新]</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2016年 冰与火之歌：权力的游戏 第六季 高清电视剧 [美国/英国/剧情/战争/奇幻/冒险][持续更新]</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-triangle-right">&nbsp;</span>2016年 冰与火之歌：权力的游戏 第六季 高清电视剧 [美国/英国/剧情/战争/奇幻/冒险][持续更新]</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 底部 -->
+
+
+<%- include footer%>	
